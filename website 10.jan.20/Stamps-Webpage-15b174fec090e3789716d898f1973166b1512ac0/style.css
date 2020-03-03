@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(to bottom, rgb(75, 57, 219) 0%, rgb(212, 140, 18) 100%);
+}
+
+/*Navigation Bar*/
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgba(199, 140, 27, 0.9);
+  position: fixed;
+  margin-left: 10px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-family: fantasy;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/*Introduciton*/
+h1{
+  padding-top: 50px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(230, 140, 27);
+}
+
+/*Best-Of Slider*/
+@keyframes slideranimation {
+0%{
+  left:0;
+}
+
+25%{
+  left:-800px;
+}
+
+50%{
+  left:-1600px;
+}
+
+75%{
+  left:-2400px;
+}
+
+100%{
+  left:-3200px;
+}
+}
+
+#bestofbox{
+ overflow: hidden;
+ width:800px;
+ position: relative;
+ top: 300px;
+ left: 50%;
+ margin: 50px;
+ transform: translate(-50%, -50%);
+ border-style: ridge;
+ border-color: rgb(219, 120, 0);
+ border-width: 24px;
+}
+
+#innerbox{
+  position:relative;
+  width: 4000px;
+  animation: slideranimation 20s infinite;
+}
+
+#innerbox img{
+  float: left;
+}
+
+/*Image Gallery*/
+.stamppic{
+  border-style: inset;
+  border-color: rgb(147, 70, 0);
+  border-width: 6px;
+  width:400px;
+  float:left;
+  margin:10px;
+}
+
+#Gallery{
+  width: 1200px;
+}
